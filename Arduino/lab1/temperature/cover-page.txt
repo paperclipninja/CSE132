@@ -1,0 +1,76 @@
+CSE132 Standard Cover Page
+
+By submitting this assignment, you certify that you have read, understood,
+and complied with the CSE 132 Collaboration Policy.
+
+You are also certifying that the following information is complete and truthful.
+
+
+Name:
+
+Email Address:
+
+Lab Section:
+
+
+CSE132 Lab 1
+
+
+Challenge level of this assignment (1 = very easy; 10 = very challenging): 5
+
+Learning value of this assignment (1 = didn't learn anything; 10 = learned a lot): 7
+
+
+Check one of the following:
+
+
+   [ ] I worked on this lab entirely on my own, with help only from the TAs and the instructor.
+   
+
+[ ] I received help from the following people or sources (other than the TAs or instructor).
+
+    List names here: 
+    
+    
+
+   [*] I completed this lab using pair programming techniques with the following CSE 132 student.
+
+    Name of partner: Charlie Wu, Arianna Sze
+    
+Explain your understanding of the code that transforms A/D counts
+into engineering units:
+
+
+  The math part is analogRead(analoginPin)*100*1.1/1023 - 50.
+ 
+  Since we use analogReference(INTERNAL), the range for analogRead is 0 - 1.1V.
+ And analogRead() returns a value between 0 - 1023. 
+   So analogRead(analoginPin)/1023 yields the percentage of the input voltage out of the whole input range, which is 1.1V. 
+   Thus, analogRead(analoginPin)/1023*1.1 yields the real input voltage. 100 is approximation of the increase in degree celsius per increase in voltage.
+   -50 is the temperature in degree celsius we get when the input is 0V.
+   analogRead(analoginPin)*100*1.1/1023 - 50, as a result, tells us the temperature in degree celsius.
+
+
+
+
+How many values did you average to get a reasonably stable temperature?
+
+10
+
+
+Did you compute the average in A/D counts and then convert to temperature,
+or did you convert first and compute the average using temperature values?
+    
+
+We convert the raw value into the temperature first, then compute the average.
+
+
+What is the file name of your graph image?
+    
+
+
+If there is anything else we should know about your work on this assignment, please 
+explain here:
+
+
+ 

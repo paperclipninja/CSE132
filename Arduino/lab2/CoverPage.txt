@@ -1,0 +1,11 @@
+Lab 2!
+Names: Arianna Sze and Sarah Schubert
+
+1. The program does not maintain the timing specification, it does not take into account the time needed to run the program. 
+
+2. With a larger filter size the filtered data became more stable and changes in temperature were more linear. 
+
+3. The program maintains timing specification much better with delta time however there is still some deviation.
+
+4. The response of the program with delta time to a doubling of the filter was very similiar to that of the program without delta time. Doubling the filter time made the filtered data much more stable. 
+
